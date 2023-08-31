@@ -1,5 +1,3 @@
-import './App.css';
-
 const name = 'Hello';
 let username = 'World';
 let dummyNum = 2;
