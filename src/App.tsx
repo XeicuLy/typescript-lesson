@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const name = 'Hello';
+let username = 'World';
+let dummyNum = 2;
+let bool = true;
+let array1 = [true, false, true];
+let array2 = [0, 1, 'hello'];
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface NAME {
+  first: string;
+  last?: string;
 }
 
-export default App
+let nameObj: NAME = { first: 'Yamada' };
+
+const increment = (x: number, y: number): number => {
+  return x + y;
+};
+
+function App() {
+  return (
+    <>
+      <h1>Vite + React</h1>
+    </>
+  );
+}
+
+export default App;
